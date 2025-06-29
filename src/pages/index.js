@@ -1,6 +1,3 @@
-// src/pages/index.tsx
-// NOTE: We have removed 'use client' as it's not needed in the `pages` directory.
-
 import { 
   DollarSign, 
   Users, 
@@ -41,7 +38,7 @@ const revenueData = [
     { month: 'Jan', revenue: 4000 }, { month: 'Feb', revenue: 3000 }, { month: 'Mar', revenue: 5000 }, { month: 'Apr', revenue: 4500 }, { month: 'May', revenue: 6000 }, { month: 'Jun', revenue: 5500 }, { month: 'Jul', revenue: 7000 }, { month: 'Aug', revenue: 6500 }, { month: 'Sep', revenue: 7500 }, { month: 'Oct', revenue: 8000 }, { month: 'Nov', revenue: 9000 }, { month: 'Dec', revenue: 8500 },
 ];
 
-// --- HELPER COMPONENTS (for better structure) ---
+// --- HELPER COMPONENTS ---
 const Card = ({ children, className = "" }) => ( <div className={`bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm ${className}`}>{children}</div> );
 const CardHeader = ({ children, className = "" }) => ( <div className={`p-4 sm:p-6 border-b border-gray-200 dark:border-gray-700 ${className}`}>{children}</div> );
 const CardContent = ({ children, className = "" }) => ( <div className={`p-4 sm:p-6 ${className}`}>{children}</div> );
