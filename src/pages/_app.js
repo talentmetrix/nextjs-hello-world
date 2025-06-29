@@ -1,8 +1,11 @@
-import type { AppProps } from 'next/app';
-// The one and only place to import global CSS
+// We still import global CSS here, same as before.
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
+// For optional type-checking in JS, you can use JSDoc comments like this:
+/**
+ * @param {import('next/app').AppProps} props
+ */
+function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
 
